@@ -10,3 +10,7 @@ FMonster::FMonster()
 FMonster::~FMonster()
 {
 }
+
+void FMonster::Tick()
+{
+}

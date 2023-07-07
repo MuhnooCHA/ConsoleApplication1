@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 int main()
 {
     // 언제 지워질지 정할 수 있게 포인터 지정
@@ -15,6 +16,8 @@ int main()
 
     MyEngine->Run();
 
+
     delete MyEngine;
+
     return 0;
 }

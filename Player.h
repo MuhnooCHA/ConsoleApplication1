@@ -7,5 +7,7 @@ public:
 	FPlayer();
 	virtual ~FPlayer();
 
+	virtual void Tick() override;
+
 };
 

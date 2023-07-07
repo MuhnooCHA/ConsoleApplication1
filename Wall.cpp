@@ -11,3 +11,7 @@ FWall::~FWall()
 {
 }
 
+void FWall::Tick()
+{
+}
+

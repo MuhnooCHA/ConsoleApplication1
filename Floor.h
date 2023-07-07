@@ -6,5 +6,7 @@ class FFloor : public AActor
 public:
 	FFloor();
 	virtual ~FFloor();
+
+	virtual void Tick();
 };
 

@@ -29,7 +29,3 @@ void AActor::Render()
 
     cout << Shape;
 }
-
-void AActor::Tick()
-{
-}

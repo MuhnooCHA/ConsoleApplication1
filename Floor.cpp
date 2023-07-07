@@ -10,3 +10,7 @@ FFloor::FFloor()
 FFloor::~FFloor()
 {
 }
+
+void FFloor::Tick()
+{
+}

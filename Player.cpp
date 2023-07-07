@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Engine.h"
 
 FPlayer::FPlayer()
 {
@@ -9,5 +10,24 @@ FPlayer::FPlayer()
 
 FPlayer::~FPlayer()
 {
+}
+
+void FPlayer::Tick()
+{
+	switch (GEngine->GetKeyCode())
+	{
+	case 'w':
+		Y--;
+		break;
+	case 's':
+		Y++;
+		break;
+	case 'a':
+		X--;
+		break;
+	case 'd':
+		X++;
+		break;
+	}
 }
 
