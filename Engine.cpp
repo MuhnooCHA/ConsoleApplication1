@@ -8,6 +8,10 @@ Engine::~Engine()
 {
 }
 
+void Engine::Run()
+{
+}
+
 void Engine::Input()
 {
 }
