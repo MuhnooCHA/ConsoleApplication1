@@ -1,4 +1,5 @@
 #pragma once
+
 class AActor
 {
 public:
@@ -12,6 +13,6 @@ public:
 	void Input();
 	void Process();
 	void Render();
-
+	void Tick();
 };
 
