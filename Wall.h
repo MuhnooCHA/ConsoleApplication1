@@ -1,14 +1,10 @@
 #pragma once
-class FWall
+#include "Actor.h"
+
+class FWall : public AActor
 {
 public:
 	FWall();
 	virtual ~FWall();
-
-	int X;
-	int Y;
-	char Shape;
-
-	void Render();
 };
 

@@ -7,11 +7,3 @@ FMonster::FMonster()
 FMonster::~FMonster()
 {
 }
-
-void FMonster::Move()
-{
-}
-
-void FMonster::Render()
-{
-}

@@ -1,14 +1,10 @@
 #pragma once
-class FFloor
+#include "Actor.h"
+
+class FFloor : public AActor
 {
 public:
 	FFloor();
 	virtual ~FFloor();
-
-	int X;
-	int Y;
-	char Shape;
-
-	void Render();
 };
 

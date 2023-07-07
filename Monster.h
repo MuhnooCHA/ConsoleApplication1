@@ -1,15 +1,10 @@
 #pragma once
-class FMonster
+#include "Actor.h"
+
+class FMonster : public AActor
 {
 public:
 	FMonster();
 	virtual ~FMonster();
-
-	int X;
-	int Y;
-	char Shape;
-
-	void Move();
-	void Render();
 };
 

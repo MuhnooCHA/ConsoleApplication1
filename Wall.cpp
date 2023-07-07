@@ -8,6 +8,3 @@ FWall::~FWall()
 {
 }
 
-void FWall::Render()
-{
-}

@@ -1,15 +1,11 @@
 #pragma once
-class FPlayer
+#include "Actor.h"
+
+class FPlayer : public AActor
 {
 public:
 	FPlayer();
 	virtual ~FPlayer();
 
-	int X;
-	int Y;
-	char Shape;
-
-	void Move();
-	void Render();
 };
 
