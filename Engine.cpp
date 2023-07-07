@@ -8,10 +8,10 @@ Engine::~Engine()
 {
 	for (auto Current : Actors)
 	{
-		delete Current;
+		delete Current; // 가리키고 있는 포인터의 주소 값을 지움
 	}
 
-	Actors.clear();
+	Actors.clear(); // 가리킴 당한 실제 값을 지움
 }
 
 void Engine::Run()
