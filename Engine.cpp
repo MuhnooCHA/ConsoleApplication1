@@ -6,6 +6,12 @@ Engine::Engine()
 
 Engine::~Engine()
 {
+	for (auto Current : Actors)
+	{
+		delete Current;
+	}
+
+	Actors.clear();
 }
 
 void Engine::Run()
@@ -21,7 +27,7 @@ void Engine::Run()
 
 }
 
-void Engine::SpawnActor(AActor NewActor)
+void Engine::SpawnActor(AActor* NewActor)
 {
 	Actors.push_back(NewActor);
 }
@@ -41,9 +47,9 @@ void Engine::Render()
 		Actors[i].Render();
 	}*/
 
-	for (AActor Current : Actors) // Actors 를 하나씩 꺼내서 Current 안에 넣는다
+	for (auto Current : Actors) // Actors 를 하나씩 꺼내서 Current 안에 넣는다
 	{
-		Current.Render();
+		Current->Render();
 	}
 }
 
@@ -54,8 +60,8 @@ void Engine::Tick()
 		Actors[i].Tick();
 	}*/
 
-	for (AActor Current : Actors) // Actors 를 하나씩 꺼내서 Current 안에 넣는다
+	for (auto Current : Actors) // Actors 를 하나씩 꺼내서 Current 안에 넣는다
 	{
-		Current.Tick();
+		Current->Tick();
 	}
 }
